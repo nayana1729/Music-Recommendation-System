@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Song</title>
+</head>
+<body>
+    <h1>Upload a Song for Recommendation</h1>
+    <form action="{{ url_for('recommend') }}" method="post" enctype="multipart/form-data">
+        <input type="file" name="song_file" accept=".mp3" required>
+        <button type="submit">Get Recommendations</button>
+    </form>
+</body>
+</html>

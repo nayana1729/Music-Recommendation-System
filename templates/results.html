@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recommendations</title>
+</head>
+<body>
+    <h1>Recommended Songs</h1>
+    <ul>
+        {% for song in recommendations %}
+            <li>{{ song }}</li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}">Upload another song</a>
+</body>
+</html>
